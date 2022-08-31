@@ -1,0 +1,41 @@
+body {
+    background-color: antiquewhite;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .search-box {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: "Square Peg", cursive;
+  }
+  
+  .col_elem {
+    margin-top: 100px;
+    display: inline;
+    margin-left: 100px;
+  }
+  
+  .info {
+    margin-top: 30px;
+    display: flex;
+    width: 50%;
+  }
+  .main-weather-info {
+    flex: 1;
+    font-family: "Square Peg", cursive;
+    margin-top: 25px;
+    margin-left: 100px;
+  }
+  
+  .addit_info {
+    font-family: "Caveat", cursive;
+    margin-right: 5px;
+  }
+  
+  .weekend_weather {
+    margin-top: 25px;
+  }
+  

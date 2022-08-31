@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>   
+    
+  </head>
+  <body>
+    <div class="container border p-2">
+      <div class="city_label border p-2 mt-3">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-light">London</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">New York</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">Milan</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-light">Kiev</button>
+          </div>
+        </div>
+      </div>
+      <div class="search-box">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            placeholder="Input your city..."
+            autocomplete="off"
+            autofocus="on"
+            class = "btn btn-light"
+            id="search-city-input"
+           
+          />
+          <input type="submit" value="Search"  class="btn btn-outline-secondary" id="search" />
+
+          <button
+          type="button"
+          class="btn btn-outline-secondary"
+          id="current-position-button">
+          Your Location
+        </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-weather-info border p-2 mt-3">
+      <div class="row">
+        <div class="col">
+          <p class="todays-date" id="todays-date">
+            Sat Aug 13, 11:00
+          </p>
+          <h1 id="city-now">Kiev</h1>
+          <ul class="weather-description">
+            <li id="temp-now">+19</li>
+            <li>Precipitation: 0%</li>
+            <li>Wind: 2 mph</li>
+            <li>High: 88° Low: 70°</li>
+          </ul>
+        </div>
+
+        <div class="weekend_weather">
+          <div class="row">
+            <div class="col">
+              <p>Monday</p>
+              <p>🌞</p>
+              <p>+31</p>
+            </div>
+            <div class="col">
+              <p>Tuesday</p>
+              <p>⛈</p>
+              <p>+27</p>
+            </div>
+            <div class="col">
+              <p>Wednesday</p>
+              <p>🌦</p>
+              <p>+20</p>
+            </div>
+            <div class="col">
+              <p>Thursday</p>
+              <p>🌦</p>
+              <p>+20</p>
+            </div>
+            <div class="col">
+              <p>Friday</p>
+              <p>🌦</p>
+              <p>+20</p>
+            </div>
+            <div class="col">
+              <p>Saturday</p>
+              <p>🌦</p>
+              <p>+20</p>
+            </div>
+            <div class="col">
+              <p>Sunday</p>
+              <p>🌫</p>
+              <p>+20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/javascripts.js"></script>
+  </body>
+</html>
