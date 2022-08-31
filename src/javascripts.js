@@ -61,7 +61,7 @@ function search(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-//homework 5
+//Show temp
 
 function showTemperature(response) {
   document.querySelector("#temp-now").innerHTML = `${Math.round(response.data.main.temp)}°`;  
