@@ -38,4 +38,25 @@ body {
   .weekend_weather {
     margin-top: 25px;
   }
+
+  li {
+    list-style: none;
+  }
   
+  .mari {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(106, 69, 69);
+    padding-top: 20px;
+  }
+
+  .contact-btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+.btn-primary {
+    color: rgb(63, 59, 59);
+    background-color: #979b9f;
+    border-color: #3f4041;
+}
