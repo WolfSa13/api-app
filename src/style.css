@@ -1,15 +1,64 @@
 body {
-    background-color: antiquewhite;
+  background-image: url(image/back.jpg);
+}
+
+  .main_box{
+    background-image: url(image/back_2.jpg) ;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
   }
   
   .container {
     margin-top: 50px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #3f4041;
+    border-radius: 5px;
+  }
+
+  .contact {
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+ 
+  .todays-date {
+    color: rgb(238, 231, 231);
+  }
+  
+  h1 {
+    color: rgb(238, 231, 231);
+  }
+    
+  .city {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+   
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 90;
+    line-height: 24px;
+    font-family: 'Caveat', cursive;
+    color: rgb(238, 231, 231);
+    
   }
   
   .search-box {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    font-family: "Square Peg", cursive;
+    
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #3f4041;
+    border-radius: 5px;
+    font-family: 'Caveat', cursive;
+
   }
   
   .col_elem {
@@ -22,12 +71,18 @@ body {
     margin-top: 30px;
     display: flex;
     width: 50%;
+    font-family: 'Caveat', cursive;
   }
   .main-weather-info {
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #3f4041;
+    border-radius: 5px;
     flex: 1;
-    font-family: "Square Peg", cursive;
-    margin-top: 25px;
-    margin-left: 100px;
+    font-family: 'Caveat', cursive;
+    
   }
   
   .addit_info {
@@ -36,11 +91,31 @@ body {
   }
   
   .weekend_weather {
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;   
+    border-radius: 5px; 
+    font-family: 'Caveat', cursive;
   }
 
   li {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 231, 231);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+    margin-bottom: 0;
+    
+    font-family: 'Caveat', cursive;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+
   }
   
   .mari {
@@ -56,7 +131,7 @@ body {
     width: 200px;
 }
 .btn-primary {
-    color: rgb(63, 59, 59);
-    background-color: #979b9f;
+    color: rgb(29, 27, 27);
+    background-color: #dcdee0;
     border-color: #3f4041;
 }

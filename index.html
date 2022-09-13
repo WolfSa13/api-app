@@ -16,23 +16,7 @@
     
   </head>
   <body>
-    <div class="container border p-2">
-      <div class="city_label border p-2 mt-3">
-        <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-light">London</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">New York</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">Milan</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">Kiev</button>
-          </div>
-        </div>
-      </div>
+  <div class="main_box">
       <div class="search-box">
         <form class="search-form" id="search-form">
           <input
@@ -41,8 +25,7 @@
             autocomplete="off"
             autofocus="on"
             class = "btn btn-light"
-            id="search-city-input"           
-          />
+            id="search-city-input"/>
           
           <input type="submit" value="Search"  class="btn btn-outline-secondary" id="search" />
 
@@ -54,7 +37,7 @@
         </button>
         </form>
       </div>
-    </div>
+    
 
     <div class="main-weather-info border p-2 mt-3">
       <div class="row">
@@ -63,59 +46,24 @@
             Sat Aug 13, 11:00
           </p>
           <h1 id="city">Kiev</h1>
-          <h3>Temperature: <span class="temp" id="temp">19</span></h3>
+          <h3>Temperature: <span class="temp" id="temp">19</span>°</h3>
                   
           <ul class="weather-description">
            
-            <li>Pressure: <span id="pre-now">0</span></li>
+            <li>Humidity: <span id="humidity">0</span> %</li>
             <li>Wind: <span id="wind"></span> km/h</li>
-            <li>Description: <span id="desc"> </span></li>            
+            <li>Today is <span id="desc"> </span></li>            
           </ul>
         </div>
+        </div>
+        </div>
 
-        <div class="weekend_weather">
-          <div class="row">
-            <div class="col">
-              <p>Monday</p>
-              <p>🌞</p>
-              <p>+31</p>
-            </div>
-            <div class="col">
-              <p>Tuesday</p>
-              <p>⛈</p>
-              <p>+27</p>
-            </div>
-            <div class="col">
-              <p>Wednesday</p>
-              <p>🌦</p>
-              <p>+20</p>
-            </div>
-            <div class="col">
-              <p>Thursday</p>
-              <p>🌦</p>
-              <p>+20</p>
-            </div>
-            <div class="col">
-              <p>Friday</p>
-              <p>🌦</p>
-              <p>+20</p>
-            </div>
-            <div class="col">
-              <p>Saturday</p>
-              <p>🌦</p>
-              <p>+20</p>
-            </div>
-            <div class="col">
-              <p>Sunday</p>
-              <p>🌫</p>
-              <p>+20</p>          
-
-            
-            </div>
-          </div>
+      </div>
+      <div class="contact border p-2 mt-3">
           <p class="mari">Coded by Mari Iv</p>
           <a href="https://github.com/WolfSa13" class="btn btn-primary contact-btn">Contact me</a>
-        </div>
+    </div>
+        
       </div>
     </div>
     <script src="src/javascripts.js"></script>
