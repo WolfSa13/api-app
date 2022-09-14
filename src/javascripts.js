@@ -52,7 +52,7 @@ function search(event) {
 
   let h1 = document.querySelector("#city");
   if (searchInput.value) {
-    h1.innerHTML = `${searchInput.value}`;
+    h1.innerHTML = searchCity(searchInput.value);
   } else {
     alert("Please enter in a city");
   }
@@ -70,6 +70,8 @@ function showTemperature(response) {
   document.querySelector("#humidity").innerHTML = Math.round(response.data.main.humidity); 
   document.querySelector("#wind").innerHTML =  Math.round(response.data.wind.speed);
   document.querySelector("#desc").innerHTML = response.data.weather[0].main;
+  document.querySelector("#press").innerHTML = response.data.main.pressure;
+  
  
 }
 
@@ -104,4 +106,7 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-position-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+
+searchCity("Paris");
 
