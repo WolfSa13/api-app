@@ -71,10 +71,40 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML =  Math.round(response.data.wind.speed);
   document.querySelector("#desc").innerHTML = response.data.weather[0].main;
   document.querySelector("#press").innerHTML = response.data.main.pressure;
-  
+
+ 
  
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#w-forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 18° </span>
+          <span class="weather-forecast-temperature-min"> 12° </span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 
 function searchCity(city) { 
   let apiKey = `9db9f4f52a4cbd9fe767e34e4a8df7cb`; 
@@ -106,5 +136,7 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-position-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+displayForecast();
 
 

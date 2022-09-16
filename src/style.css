@@ -135,3 +135,27 @@ body {
     background-color: #dcdee0;
     border-color: #3f4041;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center; 
+  color: bisque;
+  
+}
+
+.forecast-date {
+  font-size: 16px;
+  color: rgb(243, 236, 241);
+  opacity: 0.5;
+}
+
+.temp-min {
+  opacity: 0.5;
+  color: antiquewhite;
+}
+
+.forecast-temp {
+  font-size: 13px;
+  color: antiquewhite;
+
+}
