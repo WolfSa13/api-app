@@ -33,6 +33,15 @@ body {
   h1 {
     color: rgb(238, 231, 231);
   }
+
+  .video_d {
+  margin-top: -260px;
+  margin-left: 300px;
+  }
+  .video {
+    width: 500px;
+    height: 200px;
+  }
     
   .city {
     font-size: 24px;
